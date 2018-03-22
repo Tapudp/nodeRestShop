@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const Product = require('../models/product');
 
 router.get('/', (req, res, next) => {
-    Product.find()
+    Product.find() //  queries like .find() returns event method but not catch so need to turn it into real promise
         .select('name price _id')
         .exec()
         .then(docs => {
