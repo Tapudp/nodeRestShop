@@ -13,7 +13,7 @@ const orderRoutes = require('./api/routes/orders');
 // });
 mongoose.connect('mongodb://localhost/AcademingREST');
 // to clear that deprecation warning from db Server we can setup the mongoose's promise to global promise
-mongoose.Promise = global.Promise;
+//mongoose.Promise = global.Promise;
 
 app.use(morgan('dev')); // Loger middleware which logs out each visit on site into the console
 app.use(bodyParser.urlencoded({extended: false}));
