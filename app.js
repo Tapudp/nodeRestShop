@@ -16,6 +16,7 @@ mongoose.connect('mongodb://localhost/AcademingREST');
 //mongoose.Promise = global.Promise;
 
 app.use(morgan('dev')); // Loger middleware which logs out each visit on site into the console
+app.use('/uploads', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
