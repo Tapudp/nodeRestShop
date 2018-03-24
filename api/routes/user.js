@@ -68,7 +68,7 @@ router.post("/login", (req, res, next) => {
             email: user[0].email,
             userId: user[0]._id
           },  // 3rd argument is a javaScript object
-          process.env.JWT_KEY,
+          secret,
           {
             expiresIn: "1h"
           }
