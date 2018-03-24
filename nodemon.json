@@ -1,5 +1,6 @@
 {
     "env": {
-        "MONGO_ATLAS_PW": "Dbp@$2496"
+        "MONGO_ATLAS_PW": "Dbp@$2496",
+        "JWT_KEY": "secret"
     }
 }
